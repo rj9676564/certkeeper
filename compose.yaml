@@ -1,0 +1,11 @@
+services:
+  certkeeper:
+    image: ghcr.io/rj9676564/certkeeper:latest
+    container_name: certkeeper
+    restart: unless-stopped
+    command: ["daemon", "--config", "/config/config.yaml"]
+    volumes:
+      - ./config.yaml:/config/config.yaml:ro
+      - ./data:/data
+      - ./certs:/certs
+      - /var/run/docker.sock:/var/run/docker.sock

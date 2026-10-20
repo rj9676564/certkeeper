@@ -1,0 +1,8 @@
+.git
+.github
+config.yaml
+data
+certs
+dist
+*.pem
+*.key
