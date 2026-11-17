@@ -4,7 +4,7 @@ go 1.26.5
 
 require (
 	github.com/go-acme/lego/v4 v4.35.2
-	github.com/gofrs/flock v0.13.1
+	github.com/gofrs/flock v0.13.2
 	github.com/spf13/cobra v1.10.2
 	golang.org/x/net v0.61.0
 	gopkg.in/yaml.v3 v3.0.1
